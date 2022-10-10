@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { useForm } from "../hooks/useForm";
 
 const Register = ({ onRegistration }) => {
-  const accountData = {
+  const logData = {
     password: "",
     email: "",
   };
-  const { values, handleChange } = useForm(accountData);
+  const { values, handleChange } = useForm(logData);
 
   function handleRegistrationSubmit(evt) {
     evt.preventDefault();
